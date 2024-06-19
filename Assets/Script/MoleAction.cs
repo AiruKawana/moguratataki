@@ -15,7 +15,7 @@ public class MoleAction : MonoBehaviour
 
     //[SerializeField] private GameObject mole1;
     // Start is called before the first frame update
-    void Start()
+    [SerializeField] public void MoleActionStart()
     {
         StartCoroutine("MoleMoveUp");
     }
@@ -42,12 +42,6 @@ public class MoleAction : MonoBehaviour
                 yield return new WaitForSeconds(secondsTimer);
             }   
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }

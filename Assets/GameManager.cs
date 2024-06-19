@@ -6,7 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI lasttimeText;
-    [SerializeField] private float time;
+    [SerializeField] public float time;
     // Start is called before the first frame update
     void Start()
     {
