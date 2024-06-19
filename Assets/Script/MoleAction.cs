@@ -13,27 +13,34 @@ public class MoleAction : MonoBehaviour
     [SerializeField] private float downRange = -0.02f;
     [SerializeField] private float secondsTimer = 0.01f;
 
+    [SerializeField] private GameManager gameManager;
+    private bool moleMoveUp;
+
     //[SerializeField] private GameObject mole1;
     // Start is called before the first frame update
     [SerializeField] public void MoleActionStart()
     {
         StartCoroutine("MoleMoveUp");
+        moleMoveUp = true;
     }
 
-   IEnumerator MoleMoveUp()
+    public IEnumerator MoleMoveUp()
     {
-        while (molestartPosition.y < targetPosition)
+        if(moleMoveUp == true)
         {
-            molestartPosition = transform.position;
-            transform.Translate(0, upRange, 0);
-            yield return new WaitForSeconds(secondsTimer);
-            StartCoroutine("MoleMoveDown");
-        }
+            while (molestartPosition.y < targetPosition)
+            {
+                molestartPosition = transform.position;
+                transform.Translate(0, upRange, 0);
+                yield return new WaitForSeconds(secondsTimer);
+                StartCoroutine("MoleMoveDown");
+            }
+        } 
     }
 
-    IEnumerator MoleMoveDown()
+    public IEnumerator MoleMoveDown()
     {
-        if(molestartPosition.y > targetPosition)
+        if(molestartPosition.y > targetPosition || moleMoveUp == false)
         {
             while(molestartPosition.y > startYPosition)
             {
@@ -43,5 +50,14 @@ public class MoleAction : MonoBehaviour
             }   
         }
         
+    }
+
+    public void OnMouseDown()
+    {
+        if(moleMoveUp == true)
+        {
+            moleMoveUp = false;
+            gameManager.PulasScore();
+        }
     }
 }

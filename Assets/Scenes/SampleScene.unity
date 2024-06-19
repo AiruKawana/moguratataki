@@ -498,6 +498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lasttimeText: {fileID: 1385525764}
   time: 60
+  ScoreText: {fileID: 115801997}
+  score: 0
 --- !u!4 &423032228
 Transform:
   m_ObjectHideFlags: 0
@@ -753,7 +755,7 @@ MonoBehaviour:
   - {fileID: 1345863550244896117}
   - {fileID: 6377027679113557}
   - {fileID: 1881965714212672809}
-  span: 3
+  span: 1
   span2: 3
   span3: 6
   ZeroTime: 0
@@ -1864,7 +1866,7 @@ GameObject:
   - component: {fileID: 7395906712949396245}
   m_Layer: 0
   m_Name: Mole8
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,6 +1904,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!33 &233565566315524108
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1928,6 +1931,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!136 &394118571520853023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1982,7 +1986,7 @@ GameObject:
   - component: {fileID: 131768518880485970}
   m_Layer: 0
   m_Name: Mole7
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2017,7 +2021,7 @@ GameObject:
   - component: {fileID: 6597124436927217571}
   m_Layer: 0
   m_Name: Mole4
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2037,7 +2041,7 @@ GameObject:
   - component: {fileID: 347182866066750268}
   m_Layer: 0
   m_Name: Mole9
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2075,6 +2079,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!1 &2190813906436866228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,7 +2095,7 @@ GameObject:
   - component: {fileID: 6113383542161424596}
   m_Layer: 0
   m_Name: Mole3
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2534,7 +2539,7 @@ GameObject:
   - component: {fileID: 1992954202354134711}
   m_Layer: 0
   m_Name: Mole6
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2641,6 +2646,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!136 &6280699475427498787
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2710,6 +2716,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!33 &6728572197583214326
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2733,7 +2740,7 @@ GameObject:
   - component: {fileID: 7792672037774978657}
   m_Layer: 0
   m_Name: Mole5
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2813,6 +2820,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!136 &7073806209825446314
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2851,7 +2859,7 @@ GameObject:
   - component: {fileID: 7680143773554696800}
   m_Layer: 0
   m_Name: Mole2
-  m_TagString: Untagged
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2874,6 +2882,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!114 &7680143773554696800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2892,6 +2901,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!114 &7792672037774978657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,6 +2920,7 @@ MonoBehaviour:
   upRange: 0.02
   downRange: -0.02
   secondsTimer: 0.01
+  gameManager: {fileID: 423032227}
 --- !u!33 &8557648218141650335
 MeshFilter:
   m_ObjectHideFlags: 0

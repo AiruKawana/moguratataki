@@ -7,10 +7,21 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI lasttimeText;
     [SerializeField] public float time;
+    [SerializeField] private TextMeshProUGUI ScoreText;
+    [SerializeField] public int score;
+
+    //[SerializeField] private MoleAction moleAction;
     // Start is called before the first frame update
     void Start()
     {
         time = 60.0f;
+        score = 0;
+    }
+
+    public void PulasScore()
+    {
+        score += 1;
+        ScoreText.text = "Score:" + score.ToString("D2");
     }
 
     // Update is called once per frame
